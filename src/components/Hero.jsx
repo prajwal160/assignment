@@ -5,7 +5,7 @@ import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 
 import photo from "../assets/photo3-removebg-preview.png";
 import "../index.css";
-
+import BlobHero from './BlobHero'; 
 
 export default function Hero() {
     return (
@@ -36,11 +36,12 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <motion.div className="w-full flex justify-center md:justify-end">
+                {/* <motion.div className="w-full flex justify-center md:justify-end">
                     <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.8 }} className="w-60 h-66 md:w-72 md:h-76 rounded-lg overflow-hidden ring-2 ring-primary-500/40">
                         <img src={photo} alt="Prajwal profile" className="w-full h-full object-cover" />
                     </motion.div>
-                </motion.div>
+                </motion.div> */}
+                <BlobHero />
             </div>
         </section>
     );
