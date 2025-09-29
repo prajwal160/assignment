@@ -11,7 +11,7 @@ export const projects = [
         ],
         repo: "#", // Changed from 'githubUrl'
         live: "#", // Changed from 'liveUrl'
-        image: "https://via.placeholder.com/400x200/6366f1/ffffff?text=StudyNotion", // Added missing image
+        image: "../assets/Project1.png",
         gradient: "from-blue-600 via-purple-600 to-cyan-600",
         icon: "🎓"
     },
@@ -40,7 +40,9 @@ export const projects = [
         features: [
             "Feature 1 of your third project",
             "Feature 2 of your third project",
-            "Feature 3 of your third project"
+            "Feature 3 of your third project",
+            "Feature 4 of your third project",
+            "Feature 5 of your third project",
         ],
         repo: "#",
         live: "#",
