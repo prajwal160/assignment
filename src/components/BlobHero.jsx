@@ -72,9 +72,9 @@ const BlobHero = () => {
                         <motion.image
                             href={photo}
                             x="50"
-                            y="60"
+                            y="50"
                             width="380"
-                            height="412"
+                            height="430"
                             className="object-cover"
                             preserveAspectRatio="xMidYMid slice"
                             initial={{ opacity: 0, scale: 0.8 }}
@@ -103,7 +103,7 @@ const BlobHero = () => {
                 </svg>
 
                 {/* Floating particles effect */}
-                <div className="absolute inset-0 pointer-events-none">
+                {/* <div className="absolute inset-0 pointer-events-none">
                     {[...Array(6)].map((_, i) => (
                         <motion.div
                             key={i}
@@ -124,7 +124,7 @@ const BlobHero = () => {
                             }}
                         />
                     ))}
-                </div>
+                </div> */}
             </motion.div>
         </div>
     );
