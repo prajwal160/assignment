@@ -579,7 +579,8 @@ export default function ProjectShowcase({ theme = 'dark' }) {
     };
 
     return (
-        <div className={`min-h-screen py-16 px-4 transition-colors duration-500
+        
+        <div id="projects"  style={{ scrollMarginTop: "10px" }} className={`min-h-screen py-16 px-4 transition-colors duration-500
             ${theme === 'dark' 
                 ? 'bg-gradient-to-br from-gray-900 via-black to-gray-900' 
                 : 'bg-gradient-to-br from-gray-50 to-gray-100'

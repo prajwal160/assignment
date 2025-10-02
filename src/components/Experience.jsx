@@ -128,7 +128,7 @@ const experiences = [
 ];
 
 export default function WorkExperience() {
-    const [active, setActive] = useState(2); // Default active
+    const [active, setActive] = useState(0); // Default active
     const btnRefs = useRef({});
     const [dotPosition, setDotPosition] = useState({ top: 0 });
 
@@ -141,7 +141,7 @@ export default function WorkExperience() {
     }, [active]);
 
     return (
-        <section id="experience" className="max-w-6xl mx-auto px-6 py-12">
+        <section id="experience" style={{ scrollMarginTop: "40px" }} className="max-w-6xl mx-auto px-6 py-12">
             <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">Work Experience</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
                 I switch a lot of companies. It's mostly about the culture.
