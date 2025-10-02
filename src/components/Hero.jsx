@@ -12,7 +12,7 @@ export default function Hero() {
         <section id="home" className="py-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <motion.h1 initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.7 }} className="text-4xl md:text-5xl font-extrabold leading-tight">
+                    <motion.h1 initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.7 }} className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white">
                         Hi, I’m Prajwal <span className="wave-hand" aria-hidden="true">👋</span>
                     </motion.h1>
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25 }} className="mt-3 text-lg text-[var(--muted)] max-w-2xl">

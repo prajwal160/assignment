@@ -359,8 +359,8 @@ export default function About() {
         { key: "location", value: "Vijayapur, Karnataka", icon: MapPin },
         { key: "email", value: "alaladinniprajwal@gmail.com", icon: Mail },
         { key: "phone", value: "+91 9148776414", icon: Phone },
-        { key: "leetcode", value: "1536", icon: Brain },
-        { key: "aws_cert", value: "Coursera Certified", icon: Award }
+        // { key: "leetcode", value: "1536", icon: Brain },
+        // { key: "aws_cert", value: "Coursera Certified", icon: Award }
     ];
 
     return (

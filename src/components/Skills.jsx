@@ -71,14 +71,14 @@ export default function Skills() {
                         initial={{ opacity: 0, y: 8 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="bg-[var(--card)] rounded-2xl p-4 shadow-soft-lg"
+                        className="bg-[var(--card)] rounded-2xl p-4 shadow-soft-lg text-gray-900 dark:text-white"
                     >
                         <h3 className="font-semibold mb-3">{cat}</h3>
                         <div className="flex flex-wrap gap-2">
                             {items.map((skill) => (
                                 <span
                                     key={skill}
-                                    className="px-3 py-1 bg-white/5 rounded text-sm flex items-center gap-1"
+                                    className="px-3 py-1 bg-white/5 rounded text-sm flex items-center gap-1 text-gray-900 dark:text-white"
                                 >
                                     {skillIcons[skill] && skillIcons[skill]} {skill}
                                 </span>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import photop from '../assets/photo3.jpg';
-import photo from '../assets/photo3-removebg-preview.png';
+import photop from '../assets/photo3.jpg';  //brown image with the background
+// import photo from '../assets/photo3-removebg-preview.png';//brown image with the background removed
+import photo from '../assets/suit_image-removebg-preview.png';//suit image with the background removed
 
 const BlobHero = () => {
     return (

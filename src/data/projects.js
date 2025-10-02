@@ -2,16 +2,16 @@ export const projects = [
     {
         id: 1,
         title: "StudyNotion EdTech Platform",
-        desc: "A comprehensive EdTech platform built with MERN stack featuring course creation, learning management, and secure payment integration.", // Changed from 'description'
-        tech: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "Razorpay", "Cloudinary"], // Changed from 'technologies'
+        desc: "A comprehensive EdTech platform built with MERN stack featuring course creation, learning management, and secure payment integration.",
+        tech: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "Razorpay", "Cloudinary"],
         features: [
             "Developed a full-featured EdTech platform using the MERN stack, enabling smooth user experiences for course creation, learning, and ratings",
             "Engineered secure RESTful APIs for authentication, course management, and Razorpay-based payment integration",
             "Leveraged MongoDB Atlas and Cloudinary for scalable storage and deployed on Vercel & Render for global access"
         ],
-        repo: "#", // Changed from 'githubUrl'
-        live: "#", // Changed from 'liveUrl'
-        image: "../assets/Project1.png",
+        repo: "#",
+        live: "#",
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
         gradient: "from-blue-600 via-purple-600 to-cyan-600",
         icon: "🎓"
     },
@@ -28,13 +28,13 @@ export const projects = [
         ],
         repo: "#",
         live: "#",
-        image: "https://via.placeholder.com/400x200/f97316/ffffff?text=Stack+Overflow", // Added missing image
+        image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80",
         gradient: "from-orange-500 via-red-500 to-pink-500",
         icon: "💭"
     },
     {
-        id: 3, // ✅ Fixed: Changed from 2 to 3
-        title: "Another Awesome Project", // ✅ Fixed: Made it a different project
+        id: 3,
+        title: "Another Awesome Project",
         desc: "Your third project description here.",
         tech: ["React", "Node.js", "PostgreSQL"],
         features: [
@@ -46,8 +46,25 @@ export const projects = [
         ],
         repo: "#",
         live: "#",
-        image: "https://via.placeholder.com/400x200/10b981/ffffff?text=Project+3",
+        image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
         gradient: "from-green-500 via-teal-500 to-blue-500",
         icon: "🚀"
+    },
+    {
+        id: 4,
+        title: "Portfolio Website",
+        desc: "A modern portfolio website with stunning animations and dark mode support.",
+        tech: ["React", "Framer Motion", "Tailwind CSS"],
+        features: [
+            "Built with modern React and Framer Motion for smooth animations",
+            "Implemented dark/light mode toggle with seamless transitions",
+            "Created responsive design that works across all devices",
+            "Optimized for performance and SEO"
+        ],
+        repo: "#",
+        live: "#",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        gradient: "from-purple-600 via-pink-600 to-red-600",
+        icon: "🎨"
     }
 ];
