@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
-
 import photo from "../assets/photo3-removebg-preview.png";
 import "../index.css";
 import BlobHero from './BlobHero'; 
@@ -35,12 +34,6 @@ export default function Hero() {
                         <a href="https://www.geeksforgeeks.org/user/prajwal_160/" target="_blank" rel="noreferrer" aria-label="GeeksforGeeks" className="p-2 rounded-lg hover:bg-white/6"><SiGeeksforgeeks size={24} /></a>
                     </div>
                 </div>
-
-                {/* <motion.div className="w-full flex justify-center md:justify-end">
-                    <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.8 }} className="w-60 h-66 md:w-72 md:h-76 rounded-lg overflow-hidden ring-2 ring-primary-500/40">
-                        <img src={photo} alt="Prajwal profile" className="w-full h-full object-cover" />
-                    </motion.div>
-                </motion.div> */}
                 <BlobHero />
             </div>
         </section>

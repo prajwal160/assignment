@@ -29,7 +29,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[var(--bg)] text-slate-200">
       <Navbar theme={theme} setTheme={setTheme} />
-      <main className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
+      <main className="max-w-6xl mx-auto px-1 md:px-8 lg:px-12">
         <Hero />
         <About />
         <Experience />

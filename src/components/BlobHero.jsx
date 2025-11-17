@@ -1,15 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import photop from '../assets/photo3.jpg';  //brown image with the background
-// import photo from '../assets/photo3-removebg-preview.png';//brown image with the background removed
-import photo from '../assets/suit_image-removebg-preview.png';//suit image with the background removed
+import photo from '../assets/suit_image-removebg-preview.png';
 
 const BlobHero = () => {
     return (
-        <div className="flex items-center justify-center min-h-[90vh] bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-                    {/* <div className="flex items-center justify-center min-h-screen bg-gradient-to-br "> */}
+        <div className="flex items-center justify-center min-h-[60vh] sm:min-h-[75vh] lg:min-h-[90vh] bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 px-4">
             <motion.div
-                className="relative w-96 h-96 md:w-[500px] md:h-[500px]"
+                className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -101,30 +98,6 @@ const BlobHero = () => {
                         }}
                     />
                 </svg>
-
-                {/* Floating particles effect */}
-                {/* <div className="absolute inset-0 pointer-events-none">
-                    {[...Array(6)].map((_, i) => (
-                        <motion.div
-                            key={i}
-                            className="absolute w-2 h-2 bg-cyan-400 rounded-full opacity-60"
-                            style={{
-                                left: `${20 + i * 15}%`,
-                                top: `${30 + i * 10}%`,
-                            }}
-                            animate={{
-                                y: [-10, -30, -10],
-                                opacity: [0.6, 0.2, 0.6],
-                            }}
-                            transition={{
-                                duration: 2 + i * 0.5,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                                delay: i * 0.3,
-                            }}
-                        />
-                    ))}
-                </div> */}
             </motion.div>
         </div>
     );
