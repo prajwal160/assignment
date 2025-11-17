@@ -94,35 +94,39 @@ import { motion } from "framer-motion";
 const experiences = [
     {
         company: "Isourse Technologies Pvt Ltd",
-        role: "Software Engineer intern",
+        role: "Software Engineer Intern",
         duration: "June 2025 - Present",
-        location: "in-office (Delhi)",
+        location: "In-office (Delhi)",
         details: [
-            "Developed responsive web apps with JavaScript",
-            "Integrated REST APIs for real-time updates",
-            "Worked on optimizing performance & SEO",
+            "Developed an AI-powered assessment module using Gemini API to generate custom questions with difficulty levels (easy, medium, hard), enabling automated test creation and management",
+            "Built a comprehensive task management system with role-based assignment, document uploads, approval workflows, and status tracking (pending, approval pending, approved, rejected)",
+            "Implemented employee monitoring system with screen tracking via webcam, active hours calculation, break time monitoring, and Chrome extension for tab activity tracking",
+            "Created secure authentication system with Google OAuth and JWT-based session management for offer letter generation platform",
+            "Designed and integrated a Vibrant reward system for user engagement with responsive frontend interface and backend logic"
         ],
     },
     {
-        company: "IEEE Bombay Section + Alhansat internship",
-        role: "Software Engineer internship",
-        duration: "Mar 2023 - Apr 2024",
+        company: "IEEE Bombay Section and Alhansat Solutions",
+        role: "Frontend Intern",
+        duration: "Oct 2023 - Dec 2023",
         location: "Remote",
         details: [
-            "Worked on SMS Automations",
-            "Integrated Hubspot and Mailchimp",
-            "Built automated workflows from scratch",
-        ],
+            "Created a Svelte-based Dummy Text Generator tool with external API integration",
+            "Led and coordinated a 5-member team to successfully launch the project",
+            "Initiated and led efforts to identify and resolve issues, resulting in improved team cohesion and project efficiency",
+            "Built a dynamic offer-letter creation system used by HR teams and client vendors to generate fully customizable offer letters with real-time preview and branding controls.",
+            "Implemented editable templates, drag-and-drop placeholders, signature configuration, and alignment options to streamline offer-letter formatting for both internal HR and external vendor partners."
+        ]
     },
     {
         company: "NullClass",
-        role: "Fullstack Developer internship",
+        role: "Full Stack Developer Intern",
         duration: "May 2024 - Present",
         location: "Remote",
         details: [
-            "Building fullstack apps with MERN stack",
-            "Implemented authentication & authorization",
-            "Worked on cloud deployment with AWS",
+            "Developed and deployed full-stack web applications using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB, ensuring seamless user experiences",
+            "Designed a Vibrant reward system for user engagement, integrating backend logic with a responsive frontend interface",
+            "Implemented Google Authentication and secure user session management with Firebase Authentication and JWT"
         ],
     },
 ];

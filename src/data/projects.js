@@ -1,13 +1,13 @@
 export const projects = [
     {
         id: 1,
-        title: "StudyNotion EdTech Platform",
-        desc: "A comprehensive EdTech platform built with MERN stack featuring course creation, learning management, and secure payment integration.",
-        tech: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "Razorpay", "Cloudinary"],
+        title: "StudyNotion Edtech platform",
+        desc: "Developed a full-featured EdTech platform using the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), enabling smooth user experiences for course creation, learning, and ratings.",
+        tech: ["HTML", "CSS", "JavaScript", "ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
         features: [
-            "Developed a full-featured EdTech platform using the MERN stack, enabling smooth user experiences for course creation, learning, and ratings",
-            "Engineered secure RESTful APIs for authentication, course management, and Razorpay-based payment integration",
-            "Leveraged MongoDB Atlas and Cloudinary for scalable storage and deployed on Vercel & Render for global access"
+            "Developed a full-featured EdTech platform using the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), enabling smooth user experiences for course creation, learning, and ratings",
+            "Engineered secure RESTful APIs for authentication, course management, and Razorpay-based payment integration, using ExpressJS and NodeJS for robust backend operations",
+            "Leveraged MongoDB Atlas and Cloudinary for scalable storage of user data and media content, and deployed the platform on Vercel, Render, ensuring global access and high availability"
         ],
         repo: "#",
         live: "#",
@@ -18,13 +18,13 @@ export const projects = [
     {
         id: 2,
         title: "Stack Overflow Clone",
-        desc: "A fully responsive Stack Overflow clone with comprehensive Q&A functionality and user management system.",
-        tech: ["React", "MongoDB", "JavaScript", "HTML", "CSS"],
+        desc: "Executed a fully responsive Stack Overflow clone with key features using the MERN stack.",
+        tech: ["HTML", "CSS", "JavaScript", "REACT", "MongoDB"],
         features: [
             "Executed a fully responsive Stack Overflow clone with key features using the MERN stack",
-            "Configured efficient authentication system with seamless signup and login functionality",
-            "Facilitated posting, deletion, and sharing of questions/answers with subscription system for premium features",
-            "Formulated user dashboard for account management including account deletion capabilities"
+            "Configured a simple and efficient login system where users can sign up and subsequently log in seamlessly",
+            "Facilitated seamless posting, deletion, and sharing of questions and answers, fostering an interactive and collaborative community while integrating a subscription system for accessing premium features effortlessly",
+            "Formulated a simple dashboard for users to manage accounts effortlessly, including the ability to delete accounts"
         ],
         repo: "#",
         live: "#",
@@ -34,37 +34,35 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Another Awesome Project",
-        desc: "Your third project description here.",
-        tech: ["React", "Node.js", "PostgreSQL"],
+        title: "Blog Application",
+        desc: "Built a blog platform using Node.js, Express.js, and MongoDB, with EJS for templating.",
+        tech: ["EJS", "JavaScript", "Nodejs", "ExpressJs", "MongoDB"],
         features: [
-            "Feature 1 of your third project",
-            "Feature 2 of your third project",
-            "Feature 3 of your third project",
-            "Feature 4 of your third project",
-            "Feature 5 of your third project",
+            "Built a blog platform using Node.js, Express.js, and MongoDB, with EJS for templating",
+            "Integrated Multer and Cloudinary for handling image uploads efficiently. Managed both local and cloud storage for blog cover images. User Authentication Authorization",
+            "Used JWT-based authentication and cookies for session management. Ensured secure user access control and role management"
         ],
         repo: "#",
         live: "#",
         image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
         gradient: "from-green-500 via-teal-500 to-blue-500",
-        icon: "🚀"
+        icon: "📝"
     },
-    {
-        id: 4,
-        title: "Portfolio Website",
-        desc: "A modern portfolio website with stunning animations and dark mode support.",
-        tech: ["React", "Framer Motion", "Tailwind CSS"],
-        features: [
-            "Built with modern React and Framer Motion for smooth animations",
-            "Implemented dark/light mode toggle with seamless transitions",
-            "Created responsive design that works across all devices",
-            "Optimized for performance and SEO"
-        ],
-        repo: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-        gradient: "from-purple-600 via-pink-600 to-red-600",
-        icon: "🎨"
-    }
+    // {
+    //     id: 4,
+    //     title: "Portfolio Website",
+    //     desc: "A modern portfolio website with stunning animations and dark mode support.",
+    //     tech: ["React", "Framer Motion", "Tailwind CSS"],
+    //     features: [
+    //         "Built with modern React and Framer Motion for smooth animations",
+    //         "Implemented dark/light mode toggle with seamless transitions",
+    //         "Created responsive design that works across all devices",
+    //         "Optimized for performance and SEO"
+    //     ],
+    //     repo: "#",
+    //     live: "#",
+    //     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    //     gradient: "from-purple-600 via-pink-600 to-red-600",
+    //     icon: "🎨"
+    // }
 ];

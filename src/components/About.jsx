@@ -17,8 +17,8 @@ export default function About() {
     };
 
     const cardVariants = {
-        hidden: { 
-            opacity: 0, 
+        hidden: {
+            opacity: 0,
             y: 50,
             rotateX: -15
         },
@@ -124,7 +124,7 @@ export default function About() {
                     {/* Main Profile Card */}
                     <motion.div
                         variants={cardVariants}
-                        whileHover={{ 
+                        whileHover={{
                             y: -10,
                             boxShadow: "0 20px 40px rgba(59, 130, 246, 0.15)"
                         }}
@@ -133,7 +133,7 @@ export default function About() {
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl"></div>
                         <div className="relative bg-gray-900/80 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
-                            
+
                             <motion.div
                                 variants={floatingVariants}
                                 animate="animate"
@@ -157,10 +157,13 @@ export default function About() {
                                 transition={{ delay: 0.5 }}
                                 className="text-gray-300 text-lg leading-relaxed mb-8"
                             >
-                                B.Tech (CSE) graduate from <span className="text-blue-400 font-semibold">IIIT Nagpur</span> (2020–2024). 
-                                Passionate about building full-stack applications using MERN, designing secure authentication systems, 
-                                and solving complex algorithmic problems. Experienced in frontend & full-stack development with 
-                                production deployments for real users.
+                                Full Stack Developer specializing in the MERN stack with a B.Tech in Computer Science from                                 <span className="text-blue-400 font-semibold">IIIT Nagpur</span> (2020-2024).
+                                (2020–2024). Experienced in building production-ready applications across EdTech, Q&A platforms,
+                                and enterprise systems. Delivered solutions such as an AI-powered assessment platform using the Gemini API,
+                                secure payment workflows with Razorpay, and employee monitoring tools with real-time tracking.<br/><br/>
+                                Proven team collaborator with experience leading development teams and shipping tools used by thousands of monthly users.
+                                Strong technical foundation with a LeetCode rating of 1536, AWS certification, and deep expertise in RESTful APIs, authentication systems
+                                (JWT, OAuth, Firebase), and cloud deployments using Vercel, Render, and MongoDB Atlas.
                             </motion.p>
 
                             {/* Skills Progress */}
@@ -200,7 +203,7 @@ export default function About() {
                         {/* Education Card */}
                         <motion.div
                             variants={cardVariants}
-                            whileHover={{ 
+                            whileHover={{
                                 y: -5,
                                 boxShadow: "0 15px 30px rgba(34, 197, 94, 0.15)"
                             }}
@@ -225,7 +228,7 @@ export default function About() {
                         {/* Contact Info */}
                         <motion.div
                             variants={cardVariants}
-                            whileHover={{ 
+                            whileHover={{
                                 y: -5,
                                 boxShadow: "0 15px 30px rgba(168, 85, 247, 0.15)"
                             }}
@@ -239,7 +242,7 @@ export default function About() {
                                     </div>
                                     <h4 className="text-xl font-semibold text-white">Contact Info</h4>
                                 </div>
-                                
+
                                 <div className="space-y-4">
                                     {contactData.map((item, index) => (
                                         <motion.div
@@ -247,7 +250,7 @@ export default function About() {
                                             initial={{ opacity: 0, x: 20 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ delay: 0.8 + index * 0.1 }}
-                                            whileHover={{ 
+                                            whileHover={{
                                                 x: 5,
                                                 transition: { duration: 0.2 }
                                             }}
@@ -571,7 +574,7 @@ export default function About() {
 
 //     const glowVariants = {
 //         initial: { boxShadow: "0 0 20px rgba(59, 130, 246, 0.3)" },
-//         hover: { 
+//         hover: {
 //             boxShadow: "0 0 40px rgba(59, 130, 246, 0.6)",
 //             transition: { duration: 0.3 }
 //         }
@@ -591,7 +594,7 @@ export default function About() {
 //                 viewport={{ once: true, margin: "-100px" }}
 //                 className="relative z-10"
 //             >
-//                 <motion.h2 
+//                 <motion.h2
 //                     variants={itemVariants}
 //                     className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
 //                 >
@@ -600,7 +603,7 @@ export default function About() {
 
 //                 <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
 //                     {/* Main bio card */}
-//                     <motion.div 
+//                     <motion.div
 //                         variants={itemVariants}
 //                         whileHover="hover"
 //                         initial="initial"
@@ -618,14 +621,14 @@ export default function About() {
 //                                 <span className="text-2xl font-bold text-white">P</span>
 //                             </motion.div>
 
-//                             <motion.p 
+//                             <motion.p
 //                                 initial={{ opacity: 0, y: 20 }}
 //                                 whileInView={{ opacity: 1, y: 0 }}
 //                                 transition={{ delay: 0.5, duration: 0.6 }}
 //                                 className="text-gray-300 text-lg leading-relaxed mb-8"
 //                             >
-//                                 I'm <span className="text-blue-400 font-semibold">Prajwal</span> — B.Tech (CSE) from IIIT Nagpur (2020–2024). 
-//                                 I enjoy building full-stack apps using MERN, designing secure auth systems, and solving algorithmic problems. 
+//                                 I'm <span className="text-blue-400 font-semibold">Prajwal</span> — B.Tech (CSE) from IIIT Nagpur (2020–2024).
+//                                 I enjoy building full-stack apps using MERN, designing secure auth systems, and solving algorithmic problems.
 //                                 I've done internships in frontend & full-stack roles and deployed production apps for real users.
 //                             </motion.p>
 
@@ -648,7 +651,7 @@ export default function About() {
 //                     </motion.div>
 
 //                     {/* Quick facts card */}
-//                     <motion.div 
+//                     <motion.div
 //                         variants={itemVariants}
 //                         whileHover={{ y: -10 }}
 //                         className="bg-gray-900/40 backdrop-blur-xl border border-gray-700/50 rounded-3xl p-8 relative overflow-hidden"
