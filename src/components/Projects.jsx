@@ -54,7 +54,7 @@ const ProjectModal = ({ project, theme, onClose }) => {
                 <div className="relative h-48 sm:h-64 md:h-72 overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} ${theme === 'dark' ? 'opacity-80' : 'opacity-90'} z-10`} />
                     <img
-                        src={project.image}
+                        src={project.image}fchev
                         alt={project.title}
                         className="w-full h-full object-cover"
                     />
@@ -311,7 +311,7 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
         setTimeout(() => {
             setIsAutoPlaying(true);
             setIsTransitioning(false);
-        }, 3000); // Wait 3 seconds before allowing next slide
+        },); // Wait 3 seconds before allowing next slide
     };
 
     const prevSlide = () => {
@@ -325,7 +325,7 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
         setTimeout(() => {
             setIsAutoPlaying(true);
             setIsTransitioning(false);
-        }, 3000); // Wait 3 seconds before allowing next slide
+        },); // Wait 3 seconds before allowing next slide
     };
 
     const goToSlide = (index) => {
