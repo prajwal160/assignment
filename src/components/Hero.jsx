@@ -33,7 +33,7 @@ export default function Hero() {
 
                     <div className="mt-6 flex flex-wrap gap-4 items-center">
                         <a
-                            href="https://drive.google.com/file/d/1aMNTK1fcDaWLw3zQ6i4fUR8UngxfKGyj/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1E0q5uk-37xrTcn2qFWhvgLFMNWu6rwJk/view?usp=drive_link"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-slate-900 text-white hover:bg-slate-800 dark:bg-cyan-500 dark:text-slate-900 dark:hover:bg-cyan-400 shadow"
