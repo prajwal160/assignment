@@ -10,7 +10,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
-  // theme state (dark default). persisted in localStorage
   const [theme, setTheme] = useState(() => {
     try {
       return localStorage.getItem("theme") || "dark";
@@ -27,18 +26,18 @@ export default function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-slate-200">
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
       <Navbar theme={theme} setTheme={setTheme} />
       <main className="max-w-6xl mx-auto px-1 md:px-8 lg:px-12">
         <Hero />
         <About />
         <Experience />
-        <Projects />
+        <Projects theme={theme} />
         <Skills />
         <Achievements />
         <Contact />
       </main>
-      <Footer theme={theme} setTheme={setTheme} />
+      <Footer />
     </div>
   );
 }

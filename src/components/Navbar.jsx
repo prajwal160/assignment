@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FiMoon, FiSun, FiMenu } from "react-icons/fi";
+import { FiMenu, FiMoon, FiSun } from "react-icons/fi";
 import photo from "../assets/photo3.jpg";
 import photop from "../assets/p.png";
 
@@ -35,8 +35,7 @@ export default function Navbar({ theme, setTheme }) {
   ];
 
   return (
-    // <nav className="sticky top-0 z-50 backdrop-blur bg-black/30 dark:bg-black/50 border-b border-white/6">
-    <nav className="sticky top-0 z-50 backdrop-blur bg-black/30 dark:bg-black/50 border-b border-cyan-400/30">
+    <nav className="sticky top-0 z-50 backdrop-blur bg-white/95 dark:bg-black/40 border-b border-[var(--border)]">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -48,7 +47,7 @@ export default function Navbar({ theme, setTheme }) {
           </div>
           <div className="-ml-3 flex items-center">
             <img src={photop} alt="Logo P" className="w-20" />
-            <div className="-ml-5 text-2xl font-bold">rajwal</div>
+            <div className="-ml-5 text-2xl font-bold text-slate-900 dark:text-white">rajwal</div>
           </div>
           {/* <span className="text-sm text-[var(--muted)] hidden md:inline">Aspiring Full-Stack Developer</span> */}
         </div>
@@ -58,14 +57,14 @@ export default function Navbar({ theme, setTheme }) {
             <a key={l.id} href={`#${l.id}`} 
             // className="text-sm hover:text-primary-500 transition"
             className={`py-2 px-3 rounded-full transition-colors ${
-            active === l.id ? "bg-cyan-400 text-black" : "text-white hover:bg-white/10"
+            active === l.id ? "bg-cyan-400 text-black" : "text-slate-700 dark:text-white hover:bg-slate-200/60 dark:hover:bg-white/10"
         }`}
             >
               {l.label}
             </a>
           ))}
           <button
-            className="p-2 rounded-md btn-focus"
+            className="p-2 rounded-md btn-focus text-slate-700 dark:text-white hover:bg-slate-200/60 dark:hover:bg-white/10"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
           >
@@ -75,14 +74,18 @@ export default function Navbar({ theme, setTheme }) {
 
         <div className="md:hidden flex items-center gap-3">
           <button
-            className="p-2 rounded-md btn-focus"
+            className="p-2 rounded-md btn-focus text-slate-700 dark:text-white hover:bg-slate-200/60 dark:hover:bg-white/10"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme small"
           >
             {theme === "dark" ? <FiSun size={18} /> : <FiMoon size={18} />}
           </button>
 
-          <button className="p-2 rounded-md btn-focus" onClick={() => setOpen(!open)} aria-label="Open menu">
+          <button
+            className="p-2 rounded-md btn-focus text-slate-700 dark:text-white hover:bg-slate-200/60 dark:hover:bg-white/10"
+            onClick={() => setOpen(!open)}
+            aria-label="Open menu"
+          >
             <FiMenu size={20} />
           </button>
         </div>
@@ -93,7 +96,14 @@ export default function Navbar({ theme, setTheme }) {
         <div className="md:hidden px-6 pb-6">
           <div className="flex flex-col gap-3">
             {links.map(l => (
-              <a key={l.id} href={`#${l.id}`} onClick={() => setOpen(false)} className="py-2">{l.label}</a>
+              <a
+                key={l.id}
+                href={`#${l.id}`}
+                onClick={() => setOpen(false)}
+                className="py-2 text-slate-700 dark:text-white hover:text-slate-900 dark:hover:text-cyan-300"
+              >
+                {l.label}
+              </a>
             ))}
           </div>
         </div>

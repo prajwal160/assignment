@@ -54,7 +54,7 @@ const ProjectModal = ({ project, theme, onClose }) => {
                 <div className="relative h-48 sm:h-64 md:h-72 overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} ${theme === 'dark' ? 'opacity-80' : 'opacity-90'} z-10`} />
                     <img
-                        src={project.image}fchev
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover"
                     />
@@ -311,7 +311,7 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
         setTimeout(() => {
             setIsAutoPlaying(true);
             setIsTransitioning(false);
-        },); // Wait 3 seconds before allowing next slide
+        }, 3000); // Wait 3 seconds before allowing next slide
     };
 
     const prevSlide = () => {
@@ -325,7 +325,7 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
         setTimeout(() => {
             setIsAutoPlaying(true);
             setIsTransitioning(false);
-        },); // Wait 3 seconds before allowing next slide
+        }, 3000); // Wait 3 seconds before allowing next slide
     };
 
     const goToSlide = (index) => {
@@ -367,13 +367,8 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
     };
 
     return (
-        <div id="projects" style={{ scrollMarginTop: "10px" }} className={`min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6 transition-colors duration-500
-            ${theme === 'dark'
-                ? 'bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950'
-                : 'bg-gradient-to-br from-blue-50 via-white to-cyan-50'
-            }`}
-        >
-            <div className="max-w-7xl mx-auto">
+        <section id="projects" style={{ scrollMarginTop: "10px" }} className="py-16 sm:py-20 px-4 sm:px-6">
+            <div className="max-w-6xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -396,18 +391,18 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
                     </motion.div>
 
                     <h1 className={`text-4xl sm:text-5xl md:text-6xl font-bold mb-4
-                        ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                        ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
                         Featured <span className={theme === 'dark' ? 'text-cyan-400' : 'text-blue-600'}>Projects</span>
                     </h1>
                     <p className={`text-lg sm:text-xl max-w-2xl mx-auto
-                        ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+                        ${theme === 'dark' ? 'text-gray-400' : 'text-slate-600'}`}>
                         Innovative solutions crafted with passion and precision
                     </p>
                 </motion.div>
 
                 <div className="relative" style={{ perspective: '2000px' }}>
                     <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-30 pointer-events-none">
-                        <div className="max-w-7xl mx-auto px-0 flex justify-between">
+                        <div className="max-w-6xl mx-auto px-0 flex justify-between">
                             <motion.button
                                 whileHover={{ scale: isTransitioning ? 1 : 1.15, x: isTransitioning ? 0 : -5 }}
                                 whileTap={{ scale: 0.9 }}
@@ -502,6 +497,6 @@ export default function AlternativeProjectShowcase({ theme = 'dark' }) {
                     />
                 )}
             </AnimatePresence>
-        </div>
+        </section>
     );
 }

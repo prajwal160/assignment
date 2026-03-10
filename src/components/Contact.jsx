@@ -117,10 +117,10 @@ export default function Contact() {
           >
             {/* Info Cards */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Get in Touch</h3>
               
               <motion.div
-                className="group p-6 rounded-2xl bg-[var(--card)]/50 backdrop-blur-xl border border-white/10 hover:border-cyan-400/50 transition-all duration-300"
+                className="group p-6 rounded-2xl bg-[var(--card)]/80 backdrop-blur-xl border border-[var(--border)] hover:border-cyan-400/50 transition-all duration-300"
                 whileHover={{ scale: 1.02, x: 10 }}
               >
                 <div className="flex items-start space-x-4">
@@ -128,14 +128,14 @@ export default function Contact() {
                     <FiMail size={20} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Email</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Email</h4>
                     <p className="text-[var(--muted)] text-sm">prajwalalaladinni8@gmail.com</p>
                   </div>
                 </div>
               </motion.div>
 
               <motion.div
-                className="group p-6 rounded-2xl bg-[var(--card)]/50 backdrop-blur-xl border border-white/10 hover:border-purple-400/50 transition-all duration-300"
+                className="group p-6 rounded-2xl bg-[var(--card)]/80 backdrop-blur-xl border border-[var(--border)] hover:border-purple-400/50 transition-all duration-300"
                 whileHover={{ scale: 1.02, x: 10 }}
               >
                 <div className="flex items-start space-x-4">
@@ -143,7 +143,7 @@ export default function Contact() {
                     <FiMessageCircle size={20} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Response Time</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Response Time</h4>
                     <p className="text-[var(--muted)] text-sm">Usually within 24 hours</p>
                   </div>
                 </div>
@@ -152,13 +152,13 @@ export default function Contact() {
 
             {/* Social Links */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-lg font-semibold text-white mb-4">Connect on Social</h4>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Connect on Social</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.href}
-                    className="w-12 h-12 rounded-xl bg-[var(--card)]/50 backdrop-blur-xl border border-white/10 hover:border-cyan-400/50 flex items-center justify-center transition-colors"
+                    className="w-12 h-12 rounded-xl bg-[var(--card)]/80 backdrop-blur-xl border border-[var(--border)] hover:border-cyan-400/50 flex items-center justify-center transition-colors"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.95 }}
                     target="_blank"
@@ -174,11 +174,11 @@ export default function Contact() {
             {/* Decorative Element */}
             <motion.div
               variants={itemVariants}
-              className="relative p-8 rounded-2xl bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-white/10 overflow-hidden"
+              className="relative p-8 rounded-2xl bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-[var(--border)] overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5" />
               <div className="relative z-10">
-                <h4 className="text-lg font-semibold text-white mb-2">Open to Opportunities</h4>
+                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Open to Opportunities</h4>
                 <p className="text-[var(--muted)] text-sm">
                   Currently available for freelance projects and full-time positions. Let's build something amazing together!
                 </p>
@@ -198,7 +198,7 @@ export default function Contact() {
               {/* Animated Border */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-500" />
               
-              <div className="relative bg-[var(--card)]/90 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
+              <div className="relative bg-[var(--card)] rounded-3xl p-8 border border-[var(--border)]">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name Input */}
                   <motion.div
@@ -221,7 +221,7 @@ export default function Contact() {
                       <motion.input
                         type="text"
                         required
-                        className="w-full pl-12 pr-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300 outline-none"
+                        className="w-full pl-12 pr-4 py-4 rounded-xl bg-white dark:bg-white/5 border border-[var(--border)] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-cyan-400/50 focus:bg-white dark:focus:bg-white/10 transition-all duration-300 outline-none"
                         placeholder="John Doe"
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -253,7 +253,7 @@ export default function Contact() {
                       <motion.input
                         type="email"
                         required
-                        className="w-full pl-12 pr-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300 outline-none"
+                        className="w-full pl-12 pr-4 py-4 rounded-xl bg-white dark:bg-white/5 border border-[var(--border)] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-cyan-400/50 focus:bg-white dark:focus:bg-white/10 transition-all duration-300 outline-none"
                         placeholder="john@example.com"
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -285,7 +285,7 @@ export default function Contact() {
                       <motion.textarea
                         rows="6"
                         required
-                        className="w-full pl-12 pr-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300 outline-none resize-none"
+                        className="w-full pl-12 pr-4 py-4 rounded-xl bg-white dark:bg-white/5 border border-[var(--border)] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-cyan-400/50 focus:bg-white dark:focus:bg-white/10 transition-all duration-300 outline-none resize-none"
                         placeholder="Ask me anything or share feedback..."
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}

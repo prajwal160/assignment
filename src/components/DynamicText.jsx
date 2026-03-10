@@ -26,7 +26,7 @@ export default function DynamicText() {
     }, [subIndex, deleting]);
 
     return (
-        <span className="text-primary-500 font-semibold">
+        <span className="text-cyan-600 dark:text-cyan-400 font-semibold">
             {words[index].substring(0, subIndex)}
             <span className="animate-pulse">|</span>
         </span>

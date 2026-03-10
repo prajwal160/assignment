@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 import {
     SiJavascript, SiPython, SiHtml5, SiCss3, SiReact, SiRedux, SiNodedotjs, SiMongodb, SiBootstrap, SiTailwindcss, SiFigma, SiDjango
@@ -62,7 +62,7 @@ const skillIcons = {
 export default function Skills() {
     return (
         <section id="skills" className="py-12">
-            <h2 className="text-2xl font-bold mb-6">Skills</h2>
+            <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Skills</h2>
 
             <div className="grid md:grid-cols-3 gap-6">
                 {Object.entries(categories).map(([cat, items]) => (
@@ -71,14 +71,14 @@ export default function Skills() {
                         initial={{ opacity: 0, y: 8 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="bg-[var(--card)] rounded-2xl p-4 shadow-soft-lg text-gray-900 dark:text-white"
+                        className="bg-[var(--card)] rounded-2xl p-4 shadow-md border border-[var(--border)] text-gray-900 dark:text-white"
                     >
                         <h3 className="font-semibold mb-3">{cat}</h3>
                         <div className="flex flex-wrap gap-2">
                             {items.map((skill) => (
                                 <span
                                     key={skill}
-                                    className="px-3 py-1 bg-white/5 rounded text-sm flex items-center gap-1 text-gray-900 dark:text-white"
+                                    className="px-3 py-1 bg-slate-100 dark:bg-white/5 rounded text-sm flex items-center gap-1 text-slate-900 dark:text-white border border-slate-200/70 dark:border-white/10"
                                 >
                                     {skillIcons[skill] && skillIcons[skill]} {skill}
                                 </span>
@@ -90,3 +90,4 @@ export default function Skills() {
         </section>
     );
 }
+

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 const achievements = [
     { title: "LeetCode Rating", value: "1536" },
@@ -10,15 +10,16 @@ const achievements = [
 export default function Achievements() {
     return (
         <section id="achievements" className="py-12">
-            <h2 className="text-2xl font-bold mb-6">Achievements</h2>
+            <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Achievements</h2>
             <div className="grid md:grid-cols-4 gap-4">
                 {achievements.map((a, i) => (
-                    <div key={i} className="bg-[var(--card)] p-4 rounded-2xl shadow-soft-lg">
+                    <div key={i} className="bg-[var(--card)] p-4 rounded-2xl shadow-md border border-[var(--border)]">
                         <div className="text-xs text-[var(--muted)]">{a.title}</div>
-                        <div className="mt-2 font-semibold">{a.value}</div>
+                        <div className="mt-2 font-semibold text-slate-900 dark:text-white">{a.value}</div>
                     </div>
                 ))}
             </div>
         </section>
     );
 }
+

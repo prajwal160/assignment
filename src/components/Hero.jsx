@@ -1,8 +1,7 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
-import photo from "../assets/photo3-removebg-preview.png";
 import "../index.css";
 import BlobHero from "./BlobHero";
 import DynamicText from "./DynamicText";
@@ -16,9 +15,9 @@ export default function Hero() {
                         initial={{ x: -40, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white"
+                        className="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900 dark:text-white"
                     >
-                        Hi, I’m Prajwal <span className="wave-hand" aria-hidden="true">👋</span>
+                        Hi, I'm Prajwal
                     </motion.h1>
 
                     <motion.p
@@ -28,7 +27,7 @@ export default function Hero() {
                         className="mt-3 text-lg text-[var(--muted)] max-w-2xl"
                     >
                         I am a <DynamicText />.
-                        <br/>
+                        <br />
                         I build scalable web apps and enjoy solving problems with clean code.
                     </motion.p>
 
@@ -37,13 +36,13 @@ export default function Hero() {
                             href="https://drive.google.com/file/d/1aMNTK1fcDaWLw3zQ6i4fUR8UngxfKGyj/view?usp=sharing"
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary-500 hover:bg-primary-700 text-white shadow"
+                            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-slate-900 text-white hover:bg-slate-800 dark:bg-cyan-500 dark:text-slate-900 dark:hover:bg-cyan-400 shadow"
                         >
                             Download Resume
                         </a>
                         <a
                             href="#contact"
-                            className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/10 text-white"
+                            className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-slate-300 text-slate-800 hover:bg-slate-100 dark:border-white/10 dark:text-white dark:hover:bg-white/10"
                         >
                             Contact Me
                         </a>
@@ -55,7 +54,7 @@ export default function Hero() {
                             target="_blank"
                             rel="noreferrer"
                             aria-label="LinkedIn"
-                            className="p-2 rounded-lg hover:bg-white/6"
+                            className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-white dark:hover:bg-white/10"
                         >
                             <FaLinkedin size={24} />
                         </a>
@@ -64,7 +63,7 @@ export default function Hero() {
                             target="_blank"
                             rel="noreferrer"
                             aria-label="GitHub"
-                            className="p-2 rounded-lg hover:bg-white/6"
+                            className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-white dark:hover:bg-white/10"
                         >
                             <FaGithub size={24} />
                         </a>
@@ -73,7 +72,7 @@ export default function Hero() {
                             target="_blank"
                             rel="noreferrer"
                             aria-label="LeetCode"
-                            className="p-2 rounded-lg hover:bg-white/6"
+                            className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-white dark:hover:bg-white/10"
                         >
                             <SiLeetcode size={24} />
                         </a>
@@ -82,7 +81,7 @@ export default function Hero() {
                             target="_blank"
                             rel="noreferrer"
                             aria-label="GeeksforGeeks"
-                            className="p-2 rounded-lg hover:bg-white/6"
+                            className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-white dark:hover:bg-white/10"
                         >
                             <SiGeeksforgeeks size={24} />
                         </a>

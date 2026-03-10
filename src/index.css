@@ -3,33 +3,36 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+
+  --glass: rgba(255, 255, 255, 0.04);
 }
 
-/* Custom utilities */
-:root {
-  --glass: rgba(255,255,255,0.04);
-}
 html.dark {
-  --bg: #071023;
-  --card: #0b1220;
-  --muted: #94a3b8;
+  --bg: #060a13;
+  --card: #0c1323;
+  --muted: #9aa4b2;
+  --text: #e2e8f0;
+  --border: rgba(148, 163, 184, 0.18);
+  --accent: #22d3ee;
+  color-scheme: dark;
 }
+
 html:not(.dark) {
-  --bg: #f8fafc;
+  --bg: #ffffff;
   --card: #ffffff;
-  --muted: #475569;
+  --muted: #5b6675;
+  --text: #0f172a;
+  --border: rgba(15, 23, 42, 0.18);
+  --accent: #0284c7;
+  color-scheme: light;
 }
 
 /* small helper for focus */
@@ -40,11 +43,11 @@ html:not(.dark) {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: inherit;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: inherit;
 }
 
 body {
@@ -52,7 +55,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg);
-  color: white;
+  color: var(--text);
 }
 
 
@@ -68,7 +71,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -80,16 +83,9 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+@media (prefers-reduced-motion: reduce) {
+  .wave-hand {
+    animation: none;
   }
 }
 
@@ -107,10 +103,4 @@ button:focus-visible {
   display: inline-block;
   transform-origin: 70% 70%; 
   animation: wave 2s infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .wave-hand {
-    animation: none;
-  }
 }
